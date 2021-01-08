@@ -18,14 +18,12 @@
                 {
                     $formEror[] ='Characters must be at least 11 characters long '; 
                 }
-
                 $headers ='from' .$email .'\r\n';
                 $myemail ='bookfhmto22@gmail.com';
                 $subject = 'contact form';
                if(empty($formEror)) {
                 mail('$myemail','subject' , $masge ,$headers) ;
-               }
-              
+               }       
     }
 ?>
 
